@@ -15,6 +15,15 @@ export default function Calculator() {
         setDisplay(display + char);
     };
 
+    const handleResult = () => {
+        try {
+            const result = eval(display)
+            setDisplay(result)
+        } catch (error) {
+            setDisplay("erro")
+        }
+    }
+
     return (
         <div className="flex min-h-screen items-center justify-center py-6">
             <div className="w-fit rounded-3xl bg-neutral-900 p-4 shadow-2xl ring-1 ring-white/10">
@@ -51,7 +60,7 @@ export default function Calculator() {
                     <button disabled className={placeholderKey}>+/−</button>
                     <Button character="0" label="0" onClick={handleClick} />
                     <Button character="." label="." onClick={handleClick} />
-                    <Button character="=" label="=" onClick={handleClick} className={equalsKey} />
+                    <Button character="=" label="=" onClick={handleResult} className={equalsKey} />
                 </div>
             </div>
         </div>
