@@ -4,5 +4,5 @@ export type ButtonType = {
     character: ButtonCharacter
     className?: string
     label?: string
-    setDisplay: (value: ButtonCharacter) => void
+    onClick: (value: ButtonCharacter) => void
 }

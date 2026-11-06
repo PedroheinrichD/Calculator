@@ -10,6 +10,10 @@ const placeholderKey = "flex h-16 w-16 cursor-not-allowed items-center justify-c
 
 export default function Calculator() {
     const [display, setDisplay] = useState("")
+    
+    const handleClick = (char: string) => {
+        setDisplay(display + char);
+    };
 
     return (
         <div className="flex min-h-screen items-center justify-center py-6">
@@ -27,27 +31,27 @@ export default function Calculator() {
                     <button disabled className={placeholderKey}>1/x</button>
                     <button disabled className={placeholderKey}>x²</button>
                     <button disabled className={placeholderKey}>²√x</button>
-                    <Button character="/" label="÷" setDisplay={setDisplay} className={operatorKey} />
+                    <Button character="/" label="÷" onClick={handleClick} className={operatorKey} />
 
-                    <Button character="7" label="7" setDisplay={setDisplay} />
-                    <Button character="8" label="8" setDisplay={setDisplay} />
-                    <Button character="9" label="9" setDisplay={setDisplay} />
-                    <Button character="*" label="×" setDisplay={setDisplay} className={operatorKey} />
+                    <Button character="7" label="7" onClick={handleClick} />
+                    <Button character="8" label="8" onClick={handleClick} />
+                    <Button character="9" label="9" onClick={handleClick} />
+                    <Button character="*" label="×" onClick={handleClick} className={operatorKey} />
 
-                    <Button character="4" label="4" setDisplay={setDisplay} />
-                    <Button character="5" label="5" setDisplay={setDisplay} />
-                    <Button character="6" label="6" setDisplay={setDisplay} />
-                    <Button character="-" label="−" setDisplay={setDisplay} className={operatorKey} />
+                    <Button character="4" label="4" onClick={handleClick} />
+                    <Button character="5" label="5" onClick={handleClick} />
+                    <Button character="6" label="6" onClick={handleClick} />
+                    <Button character="-" label="−" onClick={handleClick} className={operatorKey} />
 
-                    <Button character="1" label="1" setDisplay={setDisplay} />
-                    <Button character="2" label="2" setDisplay={setDisplay} />
-                    <Button character="3" label="3" setDisplay={setDisplay} />
-                    <Button character="+" label="+" setDisplay={setDisplay} className={operatorKey} />
+                    <Button character="1" label="1" onClick={handleClick} />
+                    <Button character="2" label="2" onClick={handleClick} />
+                    <Button character="3" label="3" onClick={handleClick} />
+                    <Button character="+" label="+" onClick={handleClick} className={operatorKey} />
 
                     <button disabled className={placeholderKey}>+/−</button>
-                    <Button character="0" label="0" setDisplay={setDisplay} />
-                    <Button character="." label="." setDisplay={setDisplay} />
-                    <Button character="=" label="=" setDisplay={setDisplay} className={equalsKey} />
+                    <Button character="0" label="0" onClick={handleClick} />
+                    <Button character="." label="." onClick={handleClick} />
+                    <Button character="=" label="=" onClick={handleClick} className={equalsKey} />
                 </div>
             </div>
         </div>
