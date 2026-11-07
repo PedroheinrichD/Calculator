@@ -29,9 +29,9 @@ export default function Calculator() {
     }
 
     return (
-        <div className="flex min-h-screen items-center justify-center py-6">
+        <div className="flex min-h-screen items-center justify-center py-6 ">
             <div className="w-fit rounded-3xl bg-neutral-900 p-4 shadow-2xl ring-1 ring-white/10">
-                <h1 className="mb-4 flex h-24 items-end justify-end overflow-hidden rounded-2xl bg-neutral-950 px-4 pb-3 text-5xl font-light text-white ring-1 ring-white/5">
+                <h1 className="max-w-80 mb-4 flex h-24 items-end justify-end overflow-hidden rounded-2xl bg-neutral-950 px-4 pb-3 text-5xl font-light text-white ring-1 ring-white/5">
                     {display || "0"}
                 </h1>
 
