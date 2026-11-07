@@ -16,7 +16,7 @@ export default function Calculator() {
     };
 
     const formatDisplay = (value: any) => {
-        return Number(value).toFixed(2)
+        return String(parseFloat(Number(value).toFixed(2)))
     }
 
     const handleResult = () => {
