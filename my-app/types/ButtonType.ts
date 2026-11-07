@@ -1,4 +1,4 @@
-type ButtonCharacter = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '+' | '-' | '*' | '/' | '=' | '.' | '⌫' ;
+type ButtonCharacter = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '+' | '-' | '*' | '/' | '=' | '.' | '⌫' | 'C' | 'CE' | '%' | '1/x' | 'x²' | '+/−' | '²√x';
 
 export type ButtonType = {
     character?: ButtonCharacter
