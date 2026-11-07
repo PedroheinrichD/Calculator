@@ -24,6 +24,10 @@ export default function Calculator() {
         }
     }
 
+    const handleDelete = () => {
+        setDisplay("")
+    }
+
     return (
         <div className="flex min-h-screen items-center justify-center py-6">
             <div className="w-fit rounded-3xl bg-neutral-900 p-4 shadow-2xl ring-1 ring-white/10">
@@ -35,7 +39,7 @@ export default function Calculator() {
                     <button disabled className={placeholderKey}>%</button>
                     <button disabled className={placeholderKey}>CE</button>
                     <button disabled className={placeholderKey}>C</button>
-                    <button disabled className={placeholderKey}>⌫</button>
+                    <Button character="⌫" label="⌫" onClick={handleDelete} />
 
                     <button disabled className={placeholderKey}>1/x</button>
                     <button disabled className={placeholderKey}>x²</button>
