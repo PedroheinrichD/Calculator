@@ -37,6 +37,8 @@ Uma calculadora científica moderna e responsiva construída com **React**, **Ty
 - **Tailwind CSS** - Estilização utilitária
 - **Next.js** - Framework React (full-stack)
 
+<img width="377" height="584" alt="Image" src="https://github.com/user-attachments/assets/1bcf2d4c-a00c-4656-bc60-9e6689eae1f5" />
+
 ## 🚀 Como Usar
 
 ### Pré-requisitos
